@@ -2,6 +2,19 @@ import React, { Component } from "react";
 
 export default class Search extends Component {
   render() {
-    return <div>search</div>;
+    return (
+      <React.Fragment>
+        <nav>
+          <input
+            type="search"
+            className="country-search-input"
+            placeholder="Search"
+          />
+          <div className="dropdown">
+            <button className="dropbtn">Language: EN</button>
+          </div>
+        </nav>
+      </React.Fragment>
+    );
   }
 }

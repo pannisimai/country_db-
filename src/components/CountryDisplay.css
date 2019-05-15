@@ -1,0 +1,18 @@
+.country-display-container {
+  padding-top: 1em;
+  padding-left: 5em;
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  width: 200px;
+}
+
+.flag-container {
+  padding: 3em;
+  -moz-box-shadow: 5px 5px 5px 5px rgba(116, 116, 116, 0.3);
+  -webkit-box-shadow: 5px 5px 5px 5px rgba(116, 116, 116, 0.3);
+  box-shadow: 5px 5px 5px 5px rgba(116, 116, 116, 0.3);
+  margin-left: 20em;
+}

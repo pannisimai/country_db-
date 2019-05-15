@@ -1,0 +1,26 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  padding-bottom: 1em;
+  border-bottom: solid 1px rgb(182, 182, 182);
+}
+
+.dropdown {
+  margin-left: auto;
+}
+
+.dropbtn {
+  background-color: white;
+  border: solid 1px rgb(182, 182, 182);
+  color: rgb(128, 128, 128);
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  background-color: rgb(128, 128, 128);
+  border: solid 1px rgb(182, 182, 182);
+  color: white;
+}

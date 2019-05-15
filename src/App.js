@@ -9,16 +9,10 @@ export default class App extends Component {
   render() {
     return (
       <AppProvider>
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-6 col-md-6 col-lg-6">
-              <Search />
-              <List />
-            </div>
-            <div className="col-sm-6 col-md-6 col-lg-6">
-              <CountryDisplay />
-            </div>
-          </div>
+        <Search />
+        <div className="country-components-container">
+          <List />
+          <CountryDisplay />
         </div>
       </AppProvider>
     );
