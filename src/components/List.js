@@ -10,9 +10,16 @@ export default class List extends Component {
         <ul>
           <AppContext.Consumer>
             {context =>
-              context.data.map((country, index) => {
-                return <Item data={country} key={index} />;
-              })
+              context.data
+                .filter(country => {
+                  if (context.searchTerm.length === 0) return true;
+                  return country.name
+                    .toLowerCase()
+                    .includes(context.searchTerm.toLowerCase());
+                })
+                .map((country, index) => {
+                  return <Item data={country} key={index} />;
+                })
             }
           </AppContext.Consumer>
         </ul>
