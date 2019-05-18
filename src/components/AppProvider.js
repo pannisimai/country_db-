@@ -14,6 +14,10 @@ export default class AppProvider extends Component {
           country => country.name === clickedCountry
         );
         this.setState({ selectCountry: filter[0] });
+      },
+      searchTerm: "",
+      filterFunc: inputValue => {
+        this.setState({ searchTerm: inputValue });
       }
     };
   }
